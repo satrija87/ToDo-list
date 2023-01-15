@@ -39,7 +39,7 @@ function changeLabelTextStyle(e) {
 }
 
 function deleteTask(e) {
-  e.target.parentNode.remove();
+  e.target.parentElement.remove();
 }
 
 function showMessages(task) {
