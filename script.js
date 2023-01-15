@@ -8,7 +8,10 @@ let message = ul.querySelector(".message");
 let todoList = [];
 
 addButton.addEventListener("click", function () {
-  showMessages(addTask.value);
+  if (addTask.value != "") {
+    showMessages(addTask.value);
+  }
+  addTask.value = "";
 });
 
 ul.addEventListener("click", function (e) {
